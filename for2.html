@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    
+    <p>Escolha o número da tabuada e até qual número deseja multiplicar.</p>
+    
+    <form id="formulario">
+        <label for="numero">Número da tabuada:</label>
+        <input type="number" id="numero" required>
+
+        <label for="limite">Multiplicar até:</label>
+        <input type="number" id="limite" min="1" step="1" required>
+
+        <button type="submit">Gerar tabuada</button>
+    </form>
+    
+    <ul id="lista"></ul>
+    
+    <script src="for2.js"></script>
+</body>
+
+</html>
