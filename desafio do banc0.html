@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema bancario primitivo.</title>
+</head>
+<body>
+    
+    <h1>Banco Generico</h1>
+    
+    <p>retire o dinheiro.</p>
+    <p>Saldo atual: id="saldo">R$ 1000,00</p>
+
+    <label for="operacao">Operação:</label>
+	
+    <select id="operacao">
+		<option value="consultar">Consultar saldo</option>
+		<option value="depositar">Depositar</option>
+		<option value="sacar">Sacar</option>
+		<option value="extrato">Ver extrato</option>
+    </select>
+    
+    <label for="valor">Valor:</label>
+	
+    <input id="valor" type="number" min="1" max= "999999999" step="1" inputmode="number">
+
+	<button id="executar" type="button">Executar operação</button>
+
+	<section aria-live="polite">
+		<h2>Resultado</h2>
+		<div id="resultado"></div>
+	</section>
+    <div id="announce" aria-live="polite"></div>
+    <p id="resultado"></p>
+
+</body>
+</html>
